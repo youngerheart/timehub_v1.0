@@ -81,7 +81,7 @@ echo $before.'<div id="pagenavi">'."\n";
 echo '<span class="pages">Page: ' . $paged . ' of ' . $max_page . ' </span>';   
 if ( $paged > 1 ) p_link( $paged - 1, 'Previous Page', '<' );   
 if ( $paged > $p + 1 ) p_link( 1, 'First Page' );   
-if ( $paged > $p + 2 ) echo '... ';   
+if ( $paged > $p + 2 ) echo '<span class="page-dot">...</span> ';   
 for( $i = $paged - $p; $i <= $paged + $p; $i++ ) {   
 if ( $i > 0 && $i <= $max_page ) $i == $paged ? print "<span class='page-numbers current'>{$i}</span>" : p_link( $i );   
 }   

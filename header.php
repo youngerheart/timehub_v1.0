@@ -29,17 +29,18 @@
 
 <body>
     <!-- Text Logo -->
-    <header class="site_header"> 
-	<div class="header_inner">
-    	<span><a class="site_name a_blue" href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></span>
-    	<span><?php bloginfo('description'); ?></span>
-    	<!-- Navigation Menu -->
-	<span class="header_nav">
-   	 <a title="<?php bloginfo('name'); ?>"  href="/sitemap/">sitemap</a>
-	 <a title="<?php bloginfo('name'); ?>"  href="/younger的栖息地/">about younger</a> 
-    	</span>
+    <div class="site_header"> 
+	   <div class="header_inner">
+    	    <span><a class="site_name a_blue" href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></span>
+    	    <span><?php bloginfo('description'); ?></span>
+    	    <!-- Navigation Menu -->
+	        <span class="header_nav">
+   	            <a title="<?php bloginfo('name'); ?>"  href="/sitemap/">sitemap</a>
+	            <a title="<?php bloginfo('name'); ?>"  href="/younger的栖息地/">about younger</a> 
+    	    </span>
+	    </div>
 	</div>
-	</header>
-<div id="wrapper" class="container_12 clearfix">
+    <div class="header_upper"></div>
+    <div id="wrapper" class="container_12 clearfix">
 
    
