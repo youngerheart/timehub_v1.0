@@ -31,7 +31,7 @@
     <!-- Text Logo -->
     <div class="site_header"> 
 	   <div class="header_inner">
-    	    <span><a class="site_name a_blue" href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></span>
+    	    <span><a class="site_name" href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></span>
     	    <span><?php bloginfo('description'); ?></span>
     	    <!-- Navigation Menu -->
 	        <span class="header_nav">

@@ -11,4 +11,5 @@ while(have_posts()): the_post();
 <a href="<?php the_permalink(); ?>"target="_blank"><?php the_title()?></a>
 </span>
 <?php endwhile; ?>
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

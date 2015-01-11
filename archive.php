@@ -14,13 +14,12 @@
             <!-- Read More Button -->
             <a href="<?php the_permalink(); ?>">read more...</a>
         </div>
-        <div class="hr dotted clearfix">&nbsp;</div>
         <?php endwhile; ?>
         <?php else : ?>
             <h3 class="title"><a href="#" rel="bookmark">Not Found</a></h3>
         <p>There have no articles any more.</p>
         <?php endif; ?>
-    <p class="clearfix"><?php previous_posts_link('&lt;&lt;  NEWER POSTS->', 0); ?> <span class="float right"><?php next_posts_link('<- OLDER POSTS &gt;&gt;', 0); ?></span></p>
+    <?php pagenavi(); ?>
     </div>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

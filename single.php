@@ -12,19 +12,19 @@
 			<!-- Post Content -->
 			<?php the_content(); ?>
 			<div class="parse_article">
+        <?php
+        $next_post = get_next_post();
+        if (!empty( $next_post )): ?>
+          <a title="<?php echo $next_post->post_title; ?>" href="<?php echo get_permalink( $next_post->ID ); ?>"><-The Next:<?php echo $next_post->post_title; ?></a>
+        <?php endif; ?>
 				<?php
 				$prev_post = get_previous_post();
 				if (!empty( $prev_post )): ?>
-  				<a title="<?php echo $prev_post->post_title; ?>" href="<?php echo get_permalink( $prev_post->ID ); ?>"><-The Last:<?php echo $prev_post->post_title; ?></a>
+  				<a title="<?php echo $prev_post->post_title; ?>" href="<?php echo get_permalink( $prev_post->ID ); ?>">The Last:<?php echo $prev_post->post_title; ?>-></a>
 				<?php endif; ?>
-				<?php
-				$next_post = get_next_post();
-				if (!empty( $next_post )): ?>
-  				<a title="<?php echo $next_post->post_title; ?>" href="<?php echo get_permalink( $next_post->ID ); ?>">The Next:<?php echo $next_post->post_title; ?>-></a>
-				<?php endif; ?>
+        <?php comments_template(); ?>
 			</div>
 			</div>
-		<?php comments_template(); ?>
 	</div>
 <?php else : ?>
     <div class="errorbox">
