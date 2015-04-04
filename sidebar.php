@@ -14,15 +14,7 @@
         </ul>
     <?php endif; ?>
     <div id="tagcloud"></div>
-    <script type="text/javascript" src="http://timehub.cn/api/tagcloud/tagcloud.js"></script>
-        
-    <?php if ( !function_exists('dynamic_sidebar') 
-                        || !dynamic_sidebar('Fourth_sidebar') ) : ?>                    
-        <h4>Article Cache</h4>
-        <ul>
-            <?php wp_get_archives('limit=10'); ?>
-        </ul>
-    <?php endif; ?>
+    <script type="text/javascript" src="<?php echo home_url()?>/tagcloud.js"></script>
     
     </div>
     <div style="clear:both"></div>
