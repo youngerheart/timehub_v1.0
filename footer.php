@@ -2,7 +2,7 @@
 </div>
     <div class="home_footer"> 
     <span>CopyRight 2014-2015 <?php bloginfo('name'); ?>
-        &nbsp;|&nbsp; Code By <a href="/younger的栖息地/">Younger</a>
+        &nbsp;|&nbsp; Code By <a href="<?php echo home_url()?>/younger的栖息地/">Younger</a>
     </span> 
 </div>
 <a id="back_top"><span>top</span><img src="<?php bloginfo('template_directory'); ?>/images/top.png"></a>

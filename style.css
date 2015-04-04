@@ -324,16 +324,17 @@ ul,li {
 	height: 95%;
 	position: fixed;
 	left: 0;
-	background: rgb(11, 152, 178);
-	background: rgba(11, 152, 178, 0.85);
+	background: #666;
+	opacity: 0.9;
 	margin: 0;
+	padding-top: 10px;
 	top: 55px;
 	box-shadow: 0px 0px 5px #0A141E;
 }
 #sidebar h4 {
 	color: #eee;
 }
-li, li a, caption, .screen-reader-text {
+#sidebar li, #sidebar li a, #sidebar caption, .screen-reader-text {
 	color: #eee;
 }
 #sidebar li {
@@ -520,7 +521,7 @@ html,body {
 html {
 	margin: 0!important;
 	background: #6d9d9b url(images/bg.jpeg) fixed no-repeat;
-	background-size: auto 150%;
+	background-size: cover;
 }
 body {
  	font: 400 14px/1.8 Avenir,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;

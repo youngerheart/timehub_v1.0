@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
 <meta name="keywords" content="younger, 大船, Wordpress, 前端开发, html, javascript, css">
 <meta name="description" content="younger的博客，谈谈工作，生活中有趣的片段。庆幸的是，我们都在彷徨中前进，迷茫的是，我们都在时间的岔路口。时间永远分叉，通向无数的将来">
+<meta name="baidu-site-verification" content="TUzhVEr7Pi" />
 <title><?php if ( is_home() ) {
         bloginfo('name'); echo " - "; bloginfo('description');
     } elseif ( is_category() ) {
@@ -35,8 +36,8 @@
     	    <span><?php bloginfo('description'); ?></span>
     	    <!-- Navigation Menu -->
 	        <span class="header_nav">
-   	            <a title="<?php bloginfo('name'); ?>"  href="/sitemap/">sitemap</a>
-	            <a title="<?php bloginfo('name'); ?>"  href="/younger的栖息地/">about younger</a> 
+   	            <a title="<?php bloginfo('name'); ?>"  href="<?php echo home_url()?>/sitemap/">sitemap</a>
+	            <a title="<?php bloginfo('name'); ?>"  href="<?php echo home_url()?>/younger的栖息地/">about younger</a> 
     	    </span>
 	    </div>
 	</div>
