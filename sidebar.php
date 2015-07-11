@@ -14,7 +14,7 @@
         </ul>
     <?php endif; ?>
     <div id="tagcloud"></div>
-    <script type="text/javascript" src="<?php echo home_url()?>/tagcloud.js"></script>
+    <script type="text/javascript" src="http://timehub.cc/api/tagcloud/tagcloud.js"></script>
     
     </div>
     <div style="clear:both"></div>
