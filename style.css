@@ -542,6 +542,7 @@ pre {
 	margin: 5px 0;
 	padding: 8px 12px 8px 36px;
 	word-wrap:break-word;
+	font-family: Consolas, Monaco, monospace;
 }
 
 /* remember to definefocus styles! */
